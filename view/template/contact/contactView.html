@@ -1,0 +1,49 @@
+<?php print($data['header_html']); ?>
+
+<style>
+.row {
+  margin: 10px 0 !important;
+}
+  </style>
+
+<div class="col-sm text-center">
+  <h2>Contact</h2>
+  <p>Heeft u een vraag, opmerking of wilt u een boeking plaatsen. Neem dan contact op via het onderstaande formulier en dan nemen wij z.s.m. contact met u op.</p>
+</div>
+
+<form action="" method="POST" id="contact-form">
+
+  <div class="row">
+      <label class="col-sm-2 col-form-label" for="email">Naam:</label>
+      <div class="col-sm-10">
+        <input type="input" class="form-control" name="name" placeholder="Enter name">
+      </div>
+    </div>
+
+<div class="row">
+    <label class="col-sm-2 col-form-label" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" placeholder="Enter email">
+    </div>
+  </div>
+
+  <div class="row">
+      <label class="col-sm-2 col-form-label" for="email">Onderwerp:</label>
+      <div class="col-sm-10">
+        <input type="input" class="form-control" name="subject" placeholder="Enter Subject">
+      </div>
+    </div>
+    <div class="row">
+        <label class="col-sm-2 col-form-label" for="message">Message:</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" name="message" placeholder="Enter Message"></textarea>
+        </div>
+      </div>
+
+<button class="btn btn-primary">Verzenden</button>
+<?php if ($data['send']) { ?>
+  Uw bericht is verzonden.
+  <?php } ?>
+
+  </form>
+<?php print($data['footer_html']); ?>

@@ -1,0 +1,41 @@
+nav.navbar{
+  background: linear-gradient(black, 90%, purple);
+}
+
+nav.navbar-light .navbar-brand{
+  color: white;
+}
+nav.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+nav.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color:purple;
+}
+nav.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+  color:white;
+}
+nav..active, .dot:hover{
+  color: purple;
+}
+
+div.contact{
+  background: #000000;
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding: 2em;
+}
+div.contact h2{
+  margin: auto;
+}
+div.contact ul{
+  display: inline-block;
+}
+div.contact li{
+  list-style-type: none;
+  float: left;
+}
+div.contact span{
+  float: right;
+  padding-left: 3em;
+}
